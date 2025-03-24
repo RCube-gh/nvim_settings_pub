@@ -1,0 +1,53 @@
+ return {
+--      "lukas-reineke/indent-blankline.nvim",
+--      event = { "BufReadPre", "BufNewFile" },
+--      main = "ibl",
+--      opts = {
+--          enabled = true,
+--          scope = {
+--              show_start = false,
+--              show_end = false,
+--          },
+--      },
+--      config = function(_, opts)
+--          local ibl = require("ibl")
+--
+--          -- Setup the plugin with options
+--          ibl.setup(opts)
+--
+--          -- Define enable and disable functions
+--          _G.enable_indent_blankline = function()
+--              opts.enabled = true
+--              ibl.setup(opts)
+--          end
+--
+--          _G.disable_indent_blankline = function()
+--              opts.enabled = false
+--              ibl.setup(opts)
+--          end
+--
+--          -- Create key mappings
+--          vim.api.nvim_set_keymap(
+--              "n",
+--              "<Leader>ie",
+--              ":lua _G.enable_indent_blankline()<CR>",
+--              { noremap = true, silent = true }
+--          )
+--          vim.api.nvim_set_keymap(
+--              "n",
+--              "<Leader>id",
+--              ":lua _G.disable_indent_blankline()<CR>",
+--              { noremap = true, silent = true }
+--          )
+--
+--          -- Create user commands
+--          vim.api.nvim_create_user_command("EnableIndentBlankline", function()
+--              _G.enable_indent_blankline()
+--          end, {})
+--
+--          vim.api.nvim_create_user_command("DisableIndentBlankline", function()
+--              _G.disable_indent_blankline()
+--          end, {})
+--      end,
+}
+
